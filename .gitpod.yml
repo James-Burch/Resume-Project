@@ -14,3 +14,18 @@ vscode:
     - ms-toolsai.jupyter
     - ms-toolsai.jupyter-keymap
     - ms-toolsai.jupyter-renderers
+    
+    - ms-python.debugpy
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.vscode-jupyter-slideshow
+ports:
+    - name: Website
+      port: 8000
+      onOpen: open-preview
+    - name: VNC
+      description: full GUI Virtual Desktop
+      port: 6080
+      onOpen: open-browser
+    - name: Server
+      port: 10000
+      onOpen: ignore
